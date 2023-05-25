@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <p id="text" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque <span id="less">aliquid eligendi exercitationem totam nulla labore pariatur maxime facere quam </span><span id="more">  nesciunt?Facilis voluptate harum magni corporis consequatur voluptatum tempore similique nesciunt.</span>
+
+        </p>
+    </div>
+         <button class="butt" onclick="text()">SHOW MORE</button>
+    <script>
+        function text() {
+            var less = document.getElementById ("less");
+            var moreText = document.getElementById ("more");
+
+            if (less.style.display == "none") {
+                less.style.display = "inline";
+
+                 } else{
+                    less.style.display = "none"
+                 }
+        }
+
+    </script>
+</body>
+</html>
